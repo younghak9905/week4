@@ -34,5 +34,5 @@ jobs:
           git config user.email ${{ secrets.GIT_USERMAIL }}
           git add charts/my-app/values.yaml
           git commit -m "Update image tag to ${{ github.sha }}"
-          git remote set-url origin "https://x-access-token:${{ secrets.ACTIONS_PAT }}@github.com/<USER>/<REPO>.git"
+          git remote set-url origin "https://x-access-token:${{ secrets.ACTIONS_PAT }}@github.com/younghak9905/week4.git"
           git push origin master
