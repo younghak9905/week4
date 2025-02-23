@@ -23,4 +23,13 @@ jobs:
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-app:${{ github.sha }} .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-app:${{ github.sha }}
           # 여기서 charts/my-app/values.yaml 내 image.tag 등을 sed 명령어로 수정 후 git push 가능
-
+      - name: Update Helm chart
+        run: |
+          # 1) values.yaml 수정
+          sed -i "s|tag: .*|tag: ${{ github.sha }}|" charts/my-app/values.yaml
+          # 2) git commit & push
+          git config user.name ${{ secrets.GIT_USERNAME }}
+          git config user.email ${{ secrets.GIT_USERMAIL }}
+          git add charts/my-app/values.yaml
+          git commit -m "Update image tag to ${{ github.sha }}"
+          git push origin main
