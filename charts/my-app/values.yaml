@@ -3,7 +3,7 @@ replicaCount: 3
 
 image:
   repository: "younghak9905/my-app"
-  tag: "latest"
+  tag: ac8787a03f62309c03a6948c2b27b3613e0255d6
   pullPolicy: IfNotPresent
 
 service:
