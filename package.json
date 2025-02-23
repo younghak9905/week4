@@ -1,0 +1,17 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A sample Node.js application for demonstrating GitOps with ArgoCD and Helm",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+

@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/younghak9905/week4.git'
     targetRevision: 'master'
-    path: 'manifests'
+    path: 'k8s'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: 'default'

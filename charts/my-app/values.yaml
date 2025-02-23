@@ -1,0 +1,18 @@
+# values.yaml
+replicaCount: 3
+
+image:
+  repository: "nginx"
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30000
+
+containerPort: 80
+
+appName: "my-app"
+
