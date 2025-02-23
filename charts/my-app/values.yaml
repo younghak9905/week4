@@ -2,7 +2,7 @@
 replicaCount: 3
 
 image:
-  repository: "nginx"
+  repository: "younghak9905/my-app"
   tag: "latest"
   pullPolicy: IfNotPresent
 
