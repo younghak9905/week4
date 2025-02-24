@@ -4,7 +4,7 @@
   "description": "A sample Node.js application for demonstrating GitOps with ArgoCD and Helm",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/index.js",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [],
