@@ -3,7 +3,7 @@ replicaCount: 3
 
 image:
   repository: "younghak9905/my-app"
-  tag: 9445b93411c680684e27a66f7e709317101e02fc
+  tag: a171cc8d53a97dce976609ff24fbc422c3484591
   pullPolicy: IfNotPresent
 
 service:
