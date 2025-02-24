@@ -18,6 +18,7 @@ appName: "my-app"
 
 
 hpa:
+  deployName: "my-app-deployment"
   enabled: true
   minReplicas: 2
   maxReplicas: 10
