@@ -16,3 +16,9 @@ containerPort: 80
 
 appName: "my-app"
 
+
+hpa:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 10
+  cpuUtilization: 50  # CPU 사용률 기준 50%를 목표로 설정
